@@ -1,0 +1,26 @@
+html {
+  font-size: 150%;
+  line-height: 1.4;
+}
+
+body {
+  padding: 1em;
+}
+
+.grid {
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  max-width: 30em;
+  margin: auto;
+}
+
+.error {
+  background-color: hsl(0, 80%, 80%); 
+  padding: 0.5em 0.75em; 
+}
+
+.error:empty {
+  padding: 0;
+  background-color: hsl(0, 80%, 100%);
+}
