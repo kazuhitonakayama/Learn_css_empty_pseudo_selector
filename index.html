@@ -24,5 +24,30 @@
       <div class="error">aa</div>
     </div>
   </div>
+  <div class="grid">
+    <div>
+      <p>Has error message</p>
+      <div class="with_not_empty">Whoops! Something went wrong!</div>
+    </div>
+    
+    <div>
+      <p>No errors</p>
+      <div class="with_not_empty"></div>
+    </div>
+
+    <div>
+      <p>No errors</p>
+      <div class="with_not_empty">aa</div>
+    </div>
+  </div>
+  <script>
+    window.addEventListener('load', function () {
+      const pageLinkTable = document.querySelectorAll("div.with_not_empty"); // 目次のリストの親要素を特定
+
+      pageLinkTable.forEach((value, i) => {
+        console.log(value.textContent);
+      });
+    });
+  </script>
 </body>
 </html>
